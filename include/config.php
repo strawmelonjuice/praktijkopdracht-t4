@@ -3,9 +3,5 @@
 // Hardcoded because this is just a demonstration project.
 
 const config = [
-    "accounts" => [
-        ["user", "pass", 0],
-        ["user", "word", 1],
-    ]
+    "accounts" => [["vrijwilliger", "I3d3rd13rt3lt", 0], ["mar", "ram", 1]],
 ];
-

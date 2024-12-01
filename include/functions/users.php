@@ -1,6 +1,6 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT']. "../include/config.php";
+require_once $_SERVER["DOCUMENT_ROOT"] . "/../include/config.php";
 
 class userMan
 {
@@ -20,9 +20,10 @@ class userMan
 
     public static function EnsureUserIsLoggedIn(): void
     {
-        if (empty($_SESSION["uid"])) {
-            header('location: /login/');
-            die;
+        $loggedIn = $_SESSION["loggedIn"] && isset($_SESSION["uid"]);
+        if (!$loggedIn) {
+            header("location: /login/#not_logged_in_yet");
+            die();
         } else {
             global $username;
             $username = self::GetUserByUID($_SESSION["uid"])[0];
