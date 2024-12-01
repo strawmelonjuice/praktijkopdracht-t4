@@ -1,5 +1,5 @@
 <?php
-include_once "../../include/functions/users.php";
+require_once $_SERVER['DOCUMENT_ROOT']. "../include/functions/users.php";
 $userManagement = new userMan();
 $userManagement->EnsureUserIsLoggedIn();
 ?>
@@ -12,8 +12,8 @@ $userManagement->EnsureUserIsLoggedIn();
 <h1>Welkom
     <?php
     global $username;
-    echo $username;
-    ?>
+echo $username;
+?>
 </h1>
 <p>Hier komt allemaal gevoelige data!</p>
 </body>

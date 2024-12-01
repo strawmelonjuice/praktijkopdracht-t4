@@ -1,6 +1,6 @@
 <?php
 
-include_once "../config.php";
+require_once $_SERVER['DOCUMENT_ROOT']. "../include/config.php";
 
 class userMan
 {
@@ -29,4 +29,3 @@ class userMan
         }
     }
 }
-

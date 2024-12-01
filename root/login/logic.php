@@ -1,6 +1,7 @@
 <?php
-include_once "../../include/config.php";
-include_once "../../include/functions/users.php";
+
+require_once $_SERVER['DOCUMENT_ROOT']. "../include/config.php";
+require_once $_SERVER['DOCUMENT_ROOT']. "../include/functions/users.php";
 $userManagement = new userMan();
 
 $entered_username = $_POST["username"];
