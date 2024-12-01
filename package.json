@@ -1,0 +1,12 @@
+{
+	"dependencies": {},
+	"devDependencies": {
+		"tailwindcss": "^3.4.15",
+		"bun": "latest"
+	},
+	"scripts": {
+		"css:watch": "bunx tailwindcss -i ./assets/base.css -o ./root/styles.css --watch",
+		"css:build": "bunx tailwindcss -i ./assets/base.css -o ./root/styles.css"
+	}
+}
+

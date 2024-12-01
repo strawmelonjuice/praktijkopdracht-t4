@@ -1,4 +1,5 @@
 <?php
+
 // Hardcoded because this is just a demonstration project.
 
 const config = [
@@ -7,3 +8,4 @@ const config = [
         ["user", "word", 1],
     ]
 ];
+
